@@ -1,5 +1,5 @@
 {
-  "name": "gascar-test",
+  "name": "gaskar-test",
   "version": "1.0.0",
   "description": "",
   "source": [
@@ -10,7 +10,8 @@
     "dev": "parcel serve --no-cache src/index.html",
     "build": "npm run lint && npm run tsc && parcel build src/index.html --no-cache",
     "tsc": "tsc --noEmit",
-    "lint": "eslint src/**/*.{ts,tsx,ts}"
+    "lint": "eslint src/**/*.{ts,tsx,ts}",
+    "gh-pages": "npm run lint && npm run tsc && parcel build src/index.html --no-cache --public-url /gaskar-test/"
   },
   "author": "",
   "license": "ISC",
