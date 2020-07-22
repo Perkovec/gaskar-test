@@ -1,0 +1,76 @@
+.button {
+  $parent: &;
+
+  border: none;
+  color: white;
+  background-color: #C964D2;
+  font-family : inherit;
+  font-size: 1em;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: #a554ac;
+  }
+
+  &--link {
+    color: #C964D2;
+    background: none;
+
+    &:hover {
+      text-decoration: underline;
+      background: none;
+    }
+    
+    &#{$parent}--size-small {
+      font-size: 0.9em;
+      min-height: initial;
+      padding: 0.2em;
+      min-width: auto;
+    }
+
+    &#{$parent}--size-medium {
+      font-size: 1em;
+      min-height: initial;
+      padding: 0.2em;
+      min-width: auto;
+    }
+
+    &#{$parent}--size-large {
+      font-size: 1.2em;
+      min-height: initial;
+      padding: 0.2em;
+      min-width: auto;
+    }
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--size-small {
+    min-width: 100px;
+    font-size: 0.9em;
+    padding: 0.4em 1em;
+    height: 3em;
+  }
+
+  &--size-medium {
+    min-width: 120px;
+    padding: 0.6em;
+    height: 3em;
+  }
+
+  &--size-large {
+    min-width: 140px;
+    padding: 0.8em;
+    height: 3.5em;
+  }
+
+  .spinner {
+    margin-top: -0.3em;
+    margin-bottom: -0.3em;
+  }
+}

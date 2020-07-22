@@ -1,0 +1,13 @@
+.header {
+  background-color: #F5F5FA;
+  height: 3.5em;
+  min-height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0.8em;
+
+  &__content {
+    margin-left: auto;
+  }
+}
