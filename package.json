@@ -6,6 +6,7 @@
     "src/index.tsx",
     "src/index.html"
   ],
+  "homepage": "https://perkovec.github.io/gaskar-test",
   "scripts": {
     "dev": "parcel serve --no-cache src/index.html",
     "build": "npm run lint && npm run tsc && parcel build src/index.html --no-cache",
